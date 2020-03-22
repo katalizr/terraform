@@ -7,5 +7,5 @@ RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
   && cd /usr/local/bin \
   && curl https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -o terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
   && unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
-  && rm terraform_${TERRAFORM_VERSION}_linux_amd64.zi
+  && rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 

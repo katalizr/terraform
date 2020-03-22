@@ -10,7 +10,7 @@ RUN apk add --no-cache --virtual .pipeline-deps readline linux-pam \
   && cd /usr/local/bin \
   && curl https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip -o terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
   && unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
-  && rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+  && rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
   && curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${CLOUD_SDK_VERSION}-linux-x86_64.tar.gz \
   && tar xzf google-cloud-sdk-${CLOUD_SDK_VERSION}-linux-x86_64.tar.gz \
   && rm google-cloud-sdk-${CLOUD_SDK_VERSION}-linux-x86_64.tar.gz
